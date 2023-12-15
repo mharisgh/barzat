@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import { Hero } from './components/Hero'
 import Related from './components/Related'
 
+export const dynamic = "force-dynamic";
+
+
 export default function Home() {
   return (
     <div className='mx-auto'>
