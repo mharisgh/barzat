@@ -1,5 +1,3 @@
-'client'
-
 // import ImageGallery from "@/app/components/ImageGallery"
 import { fullDestination, packageList } from "@/app/interface"
 import { client } from "@/app/lib/sanity"
@@ -110,7 +108,7 @@ export default async function DestinationPage({ params }: { params: { slug: stri
                 <div className="bg-[#faee38] font-medium absolute bottom-4 right-4 text-sm px-2 py-1 rounded-md">
                   {filteredPkg.days}
                 </div>
-                <Image className="h-full w-full object-cover" src={filteredPkg.imageUrl} alt="" />
+                <Image className="h-full w-full object-cover" src={filteredPkg.imageUrl} width={100} height={100} alt="" />
               </div>
 
               <div className=" h-[40%] flex flex-col justify-around">

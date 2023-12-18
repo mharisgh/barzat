@@ -1,8 +1,9 @@
+// 'use client'
 import React from 'react'
 import { client } from '../lib/sanity'
 import { simplifiedPackage } from '../interface';
 import Link from 'next/link';
-
+import { motion } from 'framer-motion'
 
 async function getData() {
   const query = `*[_type == "destination"][0...6] | order(_createdAt desc)
@@ -26,8 +27,10 @@ async function Destination() {
   return (
 
     <section className='h-screen  max-w-7xl mx-auto py-10'>
-      
-      <div className='flex justify-between items-center'>
+
+      <div
+
+        className='flex justify-between items-center'>
         <div>
           <h1 className='text-4xl font-semibold'>Choose Destinations</h1>
           <p className='text-gray-800 mt-2'>Explore Diverse Destinations, Uncover Captivating Descriptions</p>
