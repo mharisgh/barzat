@@ -6,13 +6,18 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name'
+      title: 'Package Name'
     },
     {
       name: 'images',
       type: 'image',
-      title: 'Package Images',
+      title: 'Package Image',
       // of: [{ type: 'image' }],
+    },
+    {
+      name: 'days',
+      type: 'string',
+      title: 'How many days & nights? eg(5N/4D)'
     },
     {
       name: 'location',
@@ -21,17 +26,24 @@ export default {
       title: 'Location'
     },
     {
-      name: 'slug',
-      type: 'slug',
-      title: 'Package Slug',
-      options: {
-        source: 'name'
-      }
+      name: 'flights',
+      type: 'string',
+      title: 'Flights'
     },
     {
-      name: 'days',
+      name: 'hotels',
       type: 'string',
-      title: 'How many days & nights? eg(5N/4D)'
+      title: 'Hotels'
+    },
+    {
+      name: 'activities',
+      type: 'string',
+      title: 'Activities'
+    },
+    {
+      name: 'transfers',
+      type: 'string',
+      title: 'Transfers'
     },
     {
       name:'destination',
@@ -42,6 +54,14 @@ export default {
           type:'destination',
         },
       ],
+    },
+    {
+      name: 'slug',
+      type: 'slug',
+      title: 'Package Slug',
+      options: {
+        source: 'name'
+      }
     },
   ],
 }

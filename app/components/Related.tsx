@@ -28,8 +28,6 @@ async function getData() {
 
 export default async function Related() {
   const data: simplifiedPackage[] = await getData()
-  // console.log('data is : ',data)
-  {console.log('data is now : ',data)}
 
   return (
     <div>

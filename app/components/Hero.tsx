@@ -18,7 +18,11 @@ export const Hero = () => {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [.6, 1.9]);
 
-
+  const variants = {
+    slide:{
+      x:[0,50,0]
+    }
+  }
   return (
     <section className='bg-green-700 h-screen relative mx-auto'>
 
@@ -43,10 +47,11 @@ export const Hero = () => {
       {/* cloud */}
       <motion.div className='absolute z-[5]  '
         style={{ scale }}
-        initial={{ x: -150 }}
-        animate={{ x: 0, }}
-        transition={{ duration: 5, repeat: Infinity }}
-        whileInView={{x:0}}
+        animate='slide'
+        variants={variants}
+        transition={{ duration: 5, repeat: Infinity,  }}
+
+        // whileInView={{x:0}}
       >
         <motion.img
           style={{
