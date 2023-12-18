@@ -104,13 +104,13 @@ export default async function DestinationPage({ params }: { params: { slug: stri
       <div className="max-w-7xl mx-auto w-full  ">
         <div className="grid grid-cols-3 gap-10">
 
-          {pkgData.filter((pkg: any) => pkg.destinationRef == data._id).map((filteredPkg: any) => (
-            <div className="max-w-[300px] bg-white border border-black/20 rounded-2xl p-2 h-[360px]">
+          {pkgData.filter((pkg: any) => pkg.destinationRef == data._id).map((filteredPkg: any, idx:any) => (
+            <div key={idx} className="max-w-[300px] bg-white border border-black/20 rounded-2xl p-2 h-[360px]">
               <div className=" h-[60%] overflow-hidden rounded-xl w-full relative ">
                 <div className="bg-[#faee38] font-medium absolute bottom-4 right-4 text-sm px-2 py-1 rounded-md">
                   {filteredPkg.days}
                 </div>
-                <img className="h-full w-full object-cover" src={filteredPkg.imageUrl} alt="" />
+                <Image className="h-full w-full object-cover" src={filteredPkg.imageUrl} alt="" />
               </div>
 
               <div className=" h-[40%] flex flex-col justify-around">
