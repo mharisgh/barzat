@@ -27,4 +27,5 @@ export interface packageList {
   transfers: string
   activities: string
   location: string
+  filter: any
 }
