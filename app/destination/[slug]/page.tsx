@@ -92,7 +92,7 @@ export default async function DestinationPage({ params }: { params: { slug: stri
 
       <div className='flex justify-between items-center'>
         <div className="max-w-7xl mx-auto py-10 w-full">
-          <h1 className='text-4xl font-semibold'>Choose Destinations</h1>
+          <h1 className='text-4xl font-semibold'>Choose Holiday Packages</h1>
           <p className='text-gray-800 mt-2'>Explore Diverse Destinations, Uncover Captivating Descriptions</p>
         </div>
       </div>
